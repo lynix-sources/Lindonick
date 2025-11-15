@@ -12,7 +12,7 @@ local PlayerMouse = Player:GetMouse()
 
 local redzlib = {
 	Themes = {
-		Purple = {
+		Natal = {
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(27.5, 25, 30)),
 				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
@@ -34,7 +34,7 @@ local redzlib = {
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "Purple"
+		Theme = "Natal"
 	},
 	Settings = {},
 	Connection = {},
@@ -44,33 +44,10 @@ local redzlib = {
 	Flags = {},
 	Tabs = {},
 	Icons = (function()
-		return {
-			["anchor"] = "rbxassetid://10709761530",
-			["apple"] = "rbxassetid://10709761889",
-			["car"] = "rbxassetid://10709789810",
-			["carrot"] = "rbxassetid://10709789960",
-			["usercog"] = "rbxassetid://10747372167",
-			["userminus"] = "rbxassetid://10747372346",
-			["userplus"] = "rbxassetid://10747372702",
-			["userx"] = "rbxassetid://10747372992",
-			["info"] = "rbxassetid://10723415903",
-			["eye"] = "rbxassetid://10723346959",
-    	["home"] = "rbxassetid://10723407389",
-      ["truck"] = "rbxassetid://10747364031",
-			["headphones"] = "rbxassetid://10723406165",
-			["Drip"] = "rbxassetid://72495850369898",
-			["flame"] = "rbxassetid://10723376114",
-			["shirt"] = "rbxassetid://10734952036",
-			["settings"] = "rbxassetid://10734950309",
-			["shield"] = "rbxassetid://10734951847",
-			["coffee"] = "rbxassetid://10709810814",
-			["users"] = "rbxassetid //10747373426",
-      ["baby"] = "rbxassetid://10709769732",
-			["ghost"] = "rbxassetid://10723396107",
-			
-		}
-	end)()
-}
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lynix-sources/RedzLibV4/main/Icons.lua"))() --[[
+    I found this source on fluent but I don't know who created it
+    source -- https://github.com/dawid-scripts/Fluent/blob/master/src/Icons.lua --
+  ]],
 
 local ViewportSize = workspace.CurrentCamera.ViewportSize
 local UIScale = ViewportSize.Y / 450
@@ -1046,7 +1023,7 @@ end
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "Close",
-			Text = "Deseja realmente fechar o Nick Hub? Ele contém recursos essenciais e fechar agora pode interromper funções importantes, causar falhas ou perder suas configurações. Cuidado antes de prosseguir!",
+			Text = "Deseja realmente fechar o Shadow Hub? Ele contém recursos essenciais e fechar agora pode interromper funções importantes, causar falhas ou perder suas configurações. Cuidado antes de prosseguir!",
 			Options = {
 				{"Confirm", function()
 					ScreenGui:Destroy()
